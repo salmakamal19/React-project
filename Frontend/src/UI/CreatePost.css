@@ -1,0 +1,98 @@
+/* CreatePost.css */
+
+/* Main container */
+.create-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+/* Form container */
+.create-post-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.create-post-form h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input and label */
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  
+}
+
+/* Focus effect on input */
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-color: #2c3e50;
+  outline: none;
+}
+
+/* Textarea styling */
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-button {
+  background-color:#2c3e50;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-post-container {
+    padding: 30px;
+  }
+
+  .create-post-form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
